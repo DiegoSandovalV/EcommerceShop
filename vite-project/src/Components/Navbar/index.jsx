@@ -5,52 +5,62 @@ const Navbar = () => {
     
 
     return (
-        <nav className='flex justify-between items-center fixed z-10 w-full px-2 py-2 text-small'>
+        <nav className='flex justify-between items-center fixed z-10 w-full px-14 py-2 text-xl '>
+
+       
 
              {/* Left side */}
 
-            <ul className='flex items-center gap-3'>
+            <ul className='flex items-center gap-5'>
                <li className=''>
                     <NavLink
                     to = '/'>
-                        Shop
+                        
+                        Icon
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                     to = '/'
-                    style = {({ isActive }) => isActive ? {activeStyle} : undefined
-                }>
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}
+                    >
                         All
                     </NavLink>
                 </li> 
                 <li>
                     <NavLink
-                    to = '/clothes'>
+                    to = '/clothes'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         Clothes
                     </NavLink>
                 </li> 
                 <li>
                     <NavLink
-                    to = '/electronics'>
+                    
+                    to = '/electronics'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
+                        
                         Electronics
                     </NavLink>
                 </li> 
                 <li>
                     <NavLink
-                    to = '/furnitures'>
+                    to = '/furnitures'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         Furnitures
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
-                    to = '/toys'>
+                    to = '/toys'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         Toys
                     </NavLink>
                 </li> 
                 <li>
                     <NavLink
-                    to = '/others'>
+                    to = '/others'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         Others
                     </NavLink>
                 </li> 
@@ -59,33 +69,34 @@ const Navbar = () => {
 
             {/* Right side */}
 
-            <ul className='flex items-center gap-3'>
-               <li>
-                    <NavLink>
-                        Email@gmail.com
-                    </NavLink>
-                </li>
+            <ul className='flex items-center gap-5'
+            >
+        
                 <li>
                     <NavLink
-                    to = '/myorders'>
+                    to = '/myorders'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         My Orders
                     </NavLink>
                 </li> 
                 <li>
                     <NavLink
-                    to = '/myaccount'>
+                    to = '/myaccount'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         My Account
                     </NavLink>
                 </li> 
                 <li>
                     <NavLink
-                    to = '/signin'>
+                    to = '/signin'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         Sign In
                     </NavLink>
                 </li> 
                 <li>
                     <NavLink
-                    to = '/furnitures'>
+                    to = '/shoppingcart'
+                    className ={({ isActive }) => isActive ? activeStyle : undefined}>
                         🛒
                     </NavLink>
                 </li>
